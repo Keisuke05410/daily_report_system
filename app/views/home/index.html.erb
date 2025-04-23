@@ -1,6 +1,7 @@
 <% if user_signed_in? %>
   <h1>Welcome, <%= current_user.name %></h1>
   
+  
   <% if current_user.admin? %>
     <!-- 管理者の場合 -->
     <p>管理者専用の機能にアクセスできます。</p>
